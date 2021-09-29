@@ -1,0 +1,112 @@
+body{
+    font-family: Arial;
+    margin: 0;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+/*h2 h4 p 的設定在整個網頁的設定基本上都是一樣，顏色是觀看有幾個板塊一樣，取較多同色*/
+h2 {
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: #666;
+    letter-spacing: 0.1rem;
+}
+
+h4 {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #666;
+    letter-spacing: 0.1rem;
+}
+
+p {
+    font-size: 0.95rem;
+    color: #888;
+    line-height: 1.6rem;
+
+}
+
+/*-----------------novigator---------*/
+.navigator{
+    background-color: #4cabb1;
+    width: 280px;
+    height: 100%;
+    position: fixed;
+    right: -350px;
+    /*要點了才出現，一開始必須是負數，要整個在螢幕外面才行*/
+    top: 0;
+    z-index: 1500;
+    padding: 20px 30px;
+}
+    .navigator p {
+        text-align: right;
+    }
+    .navigator p a{
+        font-size: 1.4rem;
+        transition: color 0.3s;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    .navigator p a:hover{
+        transition: color 0.3s;
+        color: rgba(255, 255, 255, 1);
+    }
+.navigator ul{
+    padding: 0;
+    list-style: none;
+}
+.navigator li{
+    line-height: 3rem;
+}
+.navigator ul li:nth-child(1),.navigator ul li:nth-child(2){
+    border-bottom: 1px solid #ccc;
+}
+.navigator ul a{
+    color: #eee;
+    text-decoration: none;
+}
+
+.navigator div a{
+    display: block;
+    text-decoration: none;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #fff;
+    text-align: center;
+    color: #eee;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.navigator div a:nth-child(1){
+    background-color: rgba(255,255,255,0.2);
+    transform: background-color 0.3s;
+}
+
+.navigator div a:nth-child(1):hover{
+    background-color: rgba(255,255,255,0.3);
+    transform: background-color 0.3s;
+}
+.navigator div a:nth-child(2){
+    background-color: rgba(255,255,255,0);
+    transform: background-color 0.3s;
+    border: 1px solid #ccc;
+}
+.navigator div a:nth-child(2):hover{
+    background-color: rgba(255,255,255,0.2);
+    transform: background-color 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
